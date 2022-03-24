@@ -14,10 +14,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Twitter clone',
       theme: ThemeData(
-        primarySwatch: Palette.twitterBlue,
-        fontFamily: "Helvetica",
-        primaryColor: const Color.fromARGB(255, 255, 255, 255),
-      ),
+          primarySwatch: Palette.twitterBlue,
+          fontFamily: "Helvetica",
+          primaryColor: const Color.fromARGB(255, 255, 255, 255),
+          textTheme: const TextTheme(
+              bodyText1: TextStyle(color: Colors.white, fontSize: 20.0),
+              bodyText2: TextStyle(color: Colors.blueGrey, fontSize: 16.0))),
       home: const HomePage(),
     );
   }
